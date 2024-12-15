@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 <<comments
@@ -26,3 +27,23 @@ name[3]="Arisha"
 echo "First Index ${name[0]}"
 echo "Way One to print all the values: ${name[@]}"
 echo "Way Two to print all the values: ${name[*]}"
+
+echo "==============Array using Loop:1================"
+
+for i in "${name[@]}"
+do
+ echo "Value: $i"
+done
+
+echo "=============Joining using Loop:2==============="
+for i in  "${name[@]}"
+do
+ echo "Value: $i"
+done
+
+echo "=============Array initializing================="
+family=(Rifat Bristy Ihan Arisha)
+for i in "${family[*]}"
+do
+ echo $i
+done
