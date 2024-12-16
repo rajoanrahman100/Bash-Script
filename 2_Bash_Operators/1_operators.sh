@@ -67,3 +67,60 @@ then
 else 
  echo "$num1 is not greater then $num2"
 fi
+echo ""
+
+<<comments
+! Not
+-o Or
+-a And
+comments
+
+echo "Boolean AND Operators"
+
+if [ $num1 -lt 100 -a $num2 -gt 100 ]
+then
+ echo "return True"
+else
+ echo "return False"
+fi
+
+echo ""
+echo "Boolean OR Operators"
+
+if [ $num1 -lt 100 -o $num2 -gt 100 ]
+then
+ echo "Return True"
+else
+ echo "Return False"
+fi
+echo ""
+echo "Not Equal Operators"
+if [ $num1 != $num2 ]
+then
+ echo "True"
+else
+ echo "False"
+fi
+<<comments
+String Operators
+--------------------------
+= Equals
+!= Not Equals
+-z: Empty String or String size is Zero
+-n: Checl string size is non zero
+comments
+echo "String operators"
+name="Rifat"
+if [ -z $name ]
+then
+ echo "String value is zero"
+else
+ echo "String is non zero"
+fi
+echo ""
+if [ -n $name ]
+then 
+ echo "String is not empty"
+else
+ echo "String is empty"
+fi
