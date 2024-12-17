@@ -22,3 +22,12 @@ for (( i=1; i<=10; i++ ))
 do
  echo $i
 done
+
+echo ""
+echo "Read file through for loop"
+file="my_text.txt"
+for line in $(cat "$file")
+do 
+ echo $line
+done
+
