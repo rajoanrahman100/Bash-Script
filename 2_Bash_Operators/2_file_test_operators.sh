@@ -9,7 +9,7 @@ File Test Operators
 -w write permission of file
 -x execute permission of file
 """
-file=
+file="file.txt"
 
 if [ -r $file ]
 then
