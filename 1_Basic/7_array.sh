@@ -15,7 +15,14 @@ Accessing Array Value
 --------------------
 ${array_name[index]}
 
+
 comments
+
+echo "Array Length"
+
+int_array=( 10 20 30 40 50 )
+
+echo "The length of list value is ${#int_array[@]}"
 
 echo "=======Array Basics======="
 
